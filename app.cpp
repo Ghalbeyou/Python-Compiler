@@ -4,11 +4,11 @@
 
 using namespace std;
 int makeit(string command){
-    cout << "starting to compile ...";
     std::string cmd("pyinstaller --onefile ");
     cmd += command;
     system(cmd.c_str());
     cout << "if there was no folder cald 'dist' means that compilling was unable!";
+    cout << "\nquiting ...";
     return 0;
 }
 int start(){
